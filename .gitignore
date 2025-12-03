@@ -1,0 +1,14 @@
+# Virtual Environment
+venv/
+
+# Python Caches and temporary files
+__pycache__/
+*.pyc
+
+# Dataset files (large raw data)
+data/
+
+# Model Checkpoints (large files that should be downloaded, not committed)
+*.pt
+*.safetensors
+*.bin
