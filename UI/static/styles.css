@@ -8,7 +8,7 @@
     border: 1px solid black;
 }
 body{
-    background-color:#1e1e1e; 
+    /* background-color:#1e1e1e;  */
 
 }
 .About{
@@ -95,4 +95,40 @@ body{
     background-color: #00ffc8;
     color:#1e1e1e;
     box-shadow: 0 0 10px rgba(0,255,200,0.8);
+}
+
+.output-container {
+    /* Keep current manual position */
+    margin-left: 650px;
+    margin-top: -450px; 
+    /* Add relative positioning to make it the anchor for children */
+    position: relative; 
+    
+    /* ADD PADDING: Increase internal height to reserve space for the feedback box */
+    padding-bottom: 270px; 
+    
+    width: 500px;
+    height: 170px;
+    border: 1px solid black;
+}
+.feedback-area {
+    /* 🎯 FIX 1: Use absolute positioning */
+    position: absolute; 
+    
+    /* 🎯 FIX 2: Place it exactly at the bottom-center of the output box */
+    bottom: 0; /* Positions the bottom edge of the feedback box at the bottom edge of the output box */
+    left: 0; 
+    
+    width: 150%; /* Ensures it spans the width of the output box */
+
+    /* Cleanup non-functional margins */
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+
+    border: 1px solid black;
+    /* Ensure internal stacking remains correct */
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
 }

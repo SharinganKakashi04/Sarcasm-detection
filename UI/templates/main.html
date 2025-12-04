@@ -37,13 +37,33 @@
             <li>Type a sarcastic comment in the text box area</li>
             <li>Based on the result, you can give feedback </li>
             <li>"correct" or "wrong"</li>
-            <li>After giving wrong, you can tell the Model what exactly the sentence is based on the options that you are given</li>
+            <li>If it's wrong, you can tell the Model what exactly the sentence is based on the options that you are given</li>
         </ul>
     </div>
     <div class="input-container">
-        <textarea class="text-input" placeholder="Enter text here to detect sarcasm..." rows="20" cols="50"></textarea>
+        <textarea class="text-input" placeholder="Enter text here to detect sarcasm..." rows="23" cols="50"></textarea>
         <button class="analyze-button">Analyze</button>
     </div>
+    <div class="output-container">
+    Output 
+    
+    <!-- 🎯 NEW: NESTED FEEDBACK AREA -->
+    <div class="feedback-area">
+        <p class="feedback-question">Was this prediction correct?</p>
+        <div class="correct-wrong-buttons">
+            <button class="correct-button">Correct</button>
+            <button class="wrong-button">Wrong</button>
+        </div>
+        <div class="if-wrong">
+            <p class="if-wrong-question">What was the Right Response?</p>
+            <div class="sarcasm-buttons">
+                <button class="Sarcastic-button">Sarcastic</button>
+                <button class="Non-Sarcastic-button">Non-Sarcastic</button>
+            </div>
+        </div>
+    </div>
+</div> 
+<!-- Remove the old separate <div class="feedback-area">...</div> -->
   <script src="app.js"></script>
 </body>
 </html>
