@@ -12,3 +12,7 @@ data/
 *.pt
 *.safetensors
 *.bin
+
+# Interactive Learning System Files
+data/user_feedback.json
+models/roberta_before_feedback.pt

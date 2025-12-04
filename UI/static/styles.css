@@ -1,0 +1,98 @@
+.main_title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 45px;
+    font-size: 20px;
+    color: #00ffc8f9;
+    border: 1px solid black;
+}
+body{
+    background-color:#1e1e1e; 
+
+}
+.About{
+    max-width: 1250px;
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    font-size: 18px;
+    color: #00ffc898;
+    font-family: Science Gothic;
+}
+.About p{
+    margin-top: -5px;
+}
+.usage_guidelines p{
+    font-size: 35px;
+    color: #00ffc898;
+    font-family: science gothic;
+}
+.usage_guidelines{
+    border: 1px solid black;
+    display:flex;
+    flex-direction: column;
+    width: 250px;
+    margin-left: 1400px;
+    margin-top: -170px;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+.usage_guidelines ul{
+    color: #00ffc898;
+    margin-top: -30px;
+    padding: 5px;
+    font-family: Roboto;
+}
+/* .input-container{
+    display: flex;
+    margin-top: -250px;
+    border:1px solid black;
+    width: max-content;
+    gap: 10px;
+} */
+.input-container textarea{
+    display: flex;
+    width: max-content; 
+    gap :10px ;
+    margin-top: -300px;
+
+    /* 2. Theme Colors */
+    background-color: #1e1e1e; /* Match the dark body background */
+    color: #00ffc8; /* Match the bright green/cyan text color */
+    
+    /* 3. Border and Font */
+    border: 2px solid #00ffc8; /* Solid border matching the text color */
+    border-radius: 0; /* Keep it sharp, no rounded corners */
+    font-size: 1.1em;
+    font-family: monospace; /* Use monospace font for the terminal look */
+    
+    /* 4. Remove distracting focus outline */
+    outline: none; 
+    
+    margin-left: 50px;
+    
+}
+.text-input::placeholder{
+    color: rgba(0, 255, 200, 0.6);
+}
+.input-container button{
+    padding: 10px 30px;
+    font-size: 1.2em;
+    font-family: monospace;
+    background-color: transparent;
+    color: #00ffc8;
+    border: 1px solid #00ffc8;
+    border-radius: 0;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    margin-left: 220px;
+}
+.input-container button:hover{
+    background-color: #00ffc8;
+    color:#1e1e1e;
+    box-shadow: 0 0 10px rgba(0,255,200,0.8);
+}

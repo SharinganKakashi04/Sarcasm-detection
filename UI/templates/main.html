@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hello, world!</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="" />
+  <link rel="stylesheet" type="text/css" href="../static/styles.css" />
+  <link rel="icon" href="favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Science+Gothic:wght@100..900&display=swap" rel="stylesheet">
+<!-- unde this is   Roboto slab -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <pre class="main_title">
+  _________                                              ________          __                 __                
+ /   _____/____ _______   ____ _____    ______ _____     \______ \   _____/  |_  ____   _____/  |_  ___________ 
+ \_____  \\__  \\_  __ \_/ ___\\__  \  /  ___//     \     |    |  \_/ __ \   __\/ __ \_/ ___\   __\/  _ \_  __ \
+ /        \/ __ \|  | \/\  \___ / __ \_\___ \|  Y Y  \    |    `   \  ___/|  | \  ___/\  \___|  | (  <_> )  | \/
+/_______  (____  /__|    \___  >____  /____  >__|_|  /   /_______  /\___  >__|  \___  >\___  >__|  \____/|__|   
+        \/     \/            \/     \/     \/      \/            \/     \/          \/     \/                   
+    </pre>
+    <div class="About">
+        <p class="actual_About">
+            This is a State-of-the-art CNN using a heavily fine-tuned model known as RoBERTa (base) which is a transformer CNN 
+            trained upon datasets such as TweetEval from Twitter and etc.
+            Boasting an F1 score of over 75%, Detect sarcasm like never before
+        </p>
+    </div>
+    <div class="usage_guidelines">
+        <p><u>Guidelines for usage:-</u></p>
+        <ul>
+            <li>Type a sarcastic comment in the text box area</li>
+            <li>Based on the result, you can give feedback </li>
+            <li>"correct" or "wrong"</li>
+            <li>After giving wrong, you can tell the Model what exactly the sentence is based on the options that you are given</li>
+        </ul>
+    </div>
+    <div class="input-container">
+        <textarea class="text-input" placeholder="Enter text here to detect sarcasm..." rows="20" cols="50"></textarea>
+        <button class="analyze-button">Analyze</button>
+    </div>
+  <script src="app.js"></script>
+</body>
+</html>
